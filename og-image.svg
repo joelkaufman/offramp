@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <style>@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@600;800&amp;display=swap');</style>
+  <rect width="1200" height="630" fill="#0C1F19"/>
+  <!-- Faint road motif, right side, fully inside the canvas -->
+  <g transform="translate(795 75) scale(6) translate(-22.5 -11.5)">
+    <path d="M29 52 L29 45" fill="none" stroke="#17332B" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="29" cy="30" r="4.5" fill="#17332B"/>
+    <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#17332B" stroke-width="9" stroke-linecap="round"/>
+    <path d="M46 29 L57 18 L68 29" fill="none" stroke="#17332B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Logo mark -->
+  <g transform="translate(96 90) scale(1.5) translate(-22.5 -11.5)">
+    <path d="M29 52 L29 45" fill="none" stroke="#A3B8AF" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="29" cy="30" r="4.5" fill="#A3B8AF"/>
+    <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#8FB8A8" stroke-width="9" stroke-linecap="round"/>
+    <path d="M46 29 L57 18 L68 29" fill="none" stroke="#8FB8A8" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="96" y="340" font-family="Overpass, 'Helvetica Neue', Arial, sans-serif" font-size="92" font-weight="800" letter-spacing="-2" fill="#FFFFFF">Offramp Software</text>
+  <text x="96" y="420" font-family="Overpass, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="600" fill="#8FB8A8">Custom software you own,</text>
+  <text x="96" y="474" font-family="Overpass, 'Helvetica Neue', Arial, sans-serif" font-size="42" font-weight="600" fill="#8FB8A8">built around how your business runs.</text>
+</svg>
