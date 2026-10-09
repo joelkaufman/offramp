@@ -86,6 +86,43 @@
   });
 })();
 
+/* Scroll-in reveals: cards, headings, and panels fade up as they enter view.
+   Classes are only added here, so nothing is hidden without JS or with
+   reduced motion. Once revealed, the classes are removed again so hover
+   transforms (e.g. .path-card lift) work untouched afterwards. */
+(function () {
+  if (!('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var els = document.querySelectorAll(
+    '.card-grid > *, .case-grid > *, .fit-grid > *, .deliverables > *, ' +
+    '.split > *, .compare, .section h2, .section .lede'
+  );
+  if (!els.length) return;
+  document.documentElement.classList.add('js-reveal');
+
+  function cleanup(el) {
+    el.classList.remove('reveal', 'on');
+    el.style.removeProperty('--rd');
+  }
+
+  els.forEach(function (el) {
+    var i = 0, sib = el;
+    while ((sib = sib.previousElementSibling)) i++;
+    el.style.setProperty('--rd', Math.min(i, 5) * 80 + 'ms');
+    el.classList.add('reveal');
+  });
+
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      obs.unobserve(e.target);
+      e.target.classList.add('on');
+      setTimeout(cleanup, 1200, e.target);
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function (el) { obs.observe(el); });
+})();
+
 /* Process steps: reveal each step as it scrolls into view. */
 (function () {
   var steps = document.querySelectorAll('.steps li');
