@@ -70,3 +70,32 @@
     });
   });
 })();
+
+/* Diagram draw-on-scroll: animate any .diagram figure when it enters view. */
+(function () {
+  var figs = document.querySelectorAll('.diagram');
+  if (!figs.length || !('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  figs.forEach(function (fig) {
+    fig.classList.add('will-animate');
+    new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { fig.classList.add('in-view'); obs.disconnect(); }
+      });
+    }, { threshold: 0.4 }).observe(fig);
+  });
+})();
+
+/* Process steps: reveal each step as it scrolls into view. */
+(function () {
+  var steps = document.querySelectorAll('.steps li');
+  if (!steps.length || !('IntersectionObserver' in window) ||
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  document.documentElement.classList.add('js-steps');
+  var obs = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); }
+    });
+  }, { threshold: 0.35 });
+  steps.forEach(function (li) { obs.observe(li); });
+})();

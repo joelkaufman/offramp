@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI &amp; automation between the apps you keep | Offramp Software</title>
+<meta name="description" content="Offramp Software builds n8n automations with AI on the judgment steps, running on your own server: a deal closes, an order lands, a document arrives, and every other system updates itself. The workflows are yours.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Offramp Software">
+<meta property="og:title" content="AI &amp; automation between the apps you keep">
+<meta property="og:description" content="n8n workflows on your own server, with AI on the steps that need judgment. No per-task fees, and the workflows are yours.">
+<meta property="og:url" content="https://YOUR-DOMAIN/automation.html">
+<meta property="og:image" content="https://YOUR-DOMAIN/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700&family=Overpass:wght@800&family=Overpass+Mono:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="shell header-row">
+    <a class="brand" href="index.html" aria-label="Offramp Software, home"><img class="brand-logo" src="logo-light.svg" alt="" width="52" height="75"><span class="brand-text"><span class="brand-name">Offramp</span><span class="brand-sub">Custom Software</span></span></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main">
+      <a href="crm-migration.html">Leave your CRM</a>
+      <a href="new-projects.html">New projects</a>
+      <a href="automation.html" aria-current="page">AI &amp; automation</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-primary header-cta" href="contact.html">Book a free consultation</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-intro">
+    <div class="shell">
+      <h1>AI &amp; automation between the apps you keep</h1>
+      <p class="lede">Sometimes nothing needs replacing. The apps are fine on their own, and the hours go to ferrying data between them: an order lands in one system and someone retypes it into the next, every day, in both directions.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="shape-heading">
+    <div class="shell">
+      <h2 id="shape-heading">What an automation looks like</h2>
+      <p class="measure" style="color: var(--muted);">Every automation has the same shape. Something happens in one app, and a workflow carries the news to every system that needs it. Here, a sales enquiry, handled from the moment it arrives.</p>
+
+      <figure class="diagram">
+        <svg viewBox="0 0 760 310" role="img" aria-label="Diagram of the workflow on the n8n canvas: a trigger node for the arriving enquiry connects to an AI node that reads and qualifies it, which branches to three action nodes: create the lead, draft the reply, and notify sales.">
+          <defs>
+            <pattern id="n8n-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="1.5" cy="1.5" r="1.5" fill="#DCE4D8" opacity="0.7"/>
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="760" height="310" fill="url(#n8n-grid)"/>
+          <!-- rails -->
+          <path class="rail" d="M136 150 H300" fill="none" stroke="#D4DFD2" stroke-width="3" stroke-linecap="round"/>
+          <path class="rail" d="M356 150 C 440 150, 470 55, 556 55" fill="none" stroke="#D4DFD2" stroke-width="3" stroke-linecap="round"/>
+          <path class="rail" d="M356 150 H556" fill="none" stroke="#D4DFD2" stroke-width="3" stroke-linecap="round"/>
+          <path class="rail" d="M356 150 C 440 150, 470 245, 556 245" fill="none" stroke="#D4DFD2" stroke-width="3" stroke-linecap="round"/>
+          <!-- flowing data -->
+          <path class="flow" d="M136 150 H300" fill="none" stroke="#14573E" stroke-width="3" stroke-linecap="round"/>
+          <path class="flow" style="--d:-0.3s" d="M356 150 C 440 150, 470 55, 556 55" fill="none" stroke="#14573E" stroke-width="3" stroke-linecap="round"/>
+          <path class="flow" style="--d:-0.55s" d="M356 150 H556" fill="none" stroke="#14573E" stroke-width="3" stroke-linecap="round"/>
+          <path class="flow" style="--d:-0.8s" d="M356 150 C 440 150, 470 245, 556 245" fill="none" stroke="#14573E" stroke-width="3" stroke-linecap="round"/>
+          <!-- trigger node -->
+          <rect x="80" y="122" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <rect x="94" y="138" width="28" height="22" rx="3" fill="none" stroke="#14573E" stroke-width="2.5"/>
+          <path d="M94 141 L108 151 L122 141" fill="none" stroke="#14573E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="136" cy="150" r="3.5" fill="#14573E"/>
+          <text x="108" y="200" text-anchor="middle" font-family="Barlow, sans-serif" font-size="13" font-weight="600" fill="#566759">Enquiry arrives</text>
+          <!-- AI node -->
+          <rect x="300" y="122" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <path d="M328 136 L331.5 146.5 L342 150 L331.5 153.5 L328 164 L324.5 153.5 L314 150 L324.5 146.5 Z" fill="#2463CC"/>
+          <circle cx="356" cy="150" r="3.5" fill="#14573E"/>
+          <text x="328" y="200" text-anchor="middle" font-family="Barlow, sans-serif" font-size="13" font-weight="600" fill="#566759">AI qualifies</text>
+          <!-- action node: create lead -->
+          <rect x="556" y="27" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <circle cx="581" cy="48" r="6" fill="none" stroke="#14573E" stroke-width="2.5"/>
+          <path d="M571 70 C 571 61, 591 61, 591 70" fill="none" stroke="#14573E" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M597 44 V56 M591 50 H603" stroke="#14573E" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="584" y="105" text-anchor="middle" font-family="Barlow, sans-serif" font-size="13" font-weight="600" fill="#566759">Create lead</text>
+          <!-- action node: draft reply -->
+          <rect x="556" y="122" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <path d="M570 158 L598 140 L590 162 L583 156 Z" fill="none" stroke="#14573E" stroke-width="2.5" stroke-linejoin="round"/>
+          <text x="584" y="200" text-anchor="middle" font-family="Barlow, sans-serif" font-size="13" font-weight="600" fill="#566759">Draft reply</text>
+          <!-- action node: notify sales -->
+          <rect x="556" y="217" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <path d="M584 231 C 578.5 231 576 235 576 240 V246 L573 250 H595 L592 246 V240 C 592 235 589.5 231 584 231 Z" fill="none" stroke="#14573E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M581 254 C 581 256 582.5 257.5 584 257.5 C 585.5 257.5 587 256 587 254" fill="none" stroke="#14573E" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="584" y="295" text-anchor="middle" font-family="Barlow, sans-serif" font-size="13" font-weight="600" fill="#566759">Notify sales</text>
+        </svg>
+        <figcaption class="diagram-caption">An enquiry lands in the inbox and AI reads it on arrival. By the time a salesperson looks, the lead is in the CRM with a drafted reply waiting for approval. This is the workflow as it looks in n8n, running on your server.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="handoffs-heading">
+    <div class="shell">
+      <h2 id="handoffs-heading">Handoffs we automate</h2>
+      <div class="card-grid">
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M13 8 H35 V40 H13 Z"/>
+            <path d="M19 17 H29"/>
+            <path d="M19 24 H29"/>
+            <path d="M19 31 L22.5 34.5 L29 28"/>
+          </svg>
+          <h3>Sales to invoicing</h3>
+          <p>A closed deal becomes a draft invoice in your accounting system, with the right line items, before anyone opens a spreadsheet.</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M24 8 V26"/>
+            <path d="M16 19 L24 27 L32 19"/>
+            <path d="M8 32 H17 L20 36 H28 L31 32 H40 V40 H8 Z"/>
+          </svg>
+          <h3>Lead intake</h3>
+          <p>Enquiries from your website and inbox land in one pipeline, assigned to the right person while they're still warm.</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M10 38 V22"/>
+            <path d="M24 38 V12"/>
+            <path d="M38 38 V28"/>
+          </svg>
+          <h3>Weekly numbers</h3>
+          <p>The figures your Monday meeting needs, pulled from the systems that hold them and delivered before the meeting, the same way every week.</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M24 9 C17 9 14 14 14 20 V28 L10 33 H38 L34 28 V20 C34 14 31 9 24 9 Z"/>
+            <path d="M20 38 C20 40.5 22 42 24 42 C26 42 28 40.5 28 38"/>
+          </svg>
+          <h3>Alerts and approvals</h3>
+          <p>The right person hears about the stuck order or the oversized discount the moment it happens, in the chat tool they already watch.</p>
+        </article>
+        <article class="card">
+          <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M14 8 H34 V40 H14 Z"/>
+            <path d="M20 16 H28"/>
+            <path d="M20 32 H28"/>
+            <path d="M8 24 H40"/>
+          </svg>
+          <h3>Document data extraction</h3>
+          <p>Invoices and scanned forms are read with OCR and AI, and what they say lands in your systems as structured records, with nothing typed by hand.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="ai-heading">
+    <div class="shell">
+      <h2 id="ai-heading">Where AI fits in</h2>
+      <div class="measure">
+        <p>Plain automation moves data. Adding AI lets a workflow handle steps that used to need a person's judgment: reading an emailed invoice and entering what it says, or drafting the reply a routine enquiry deserves.</p>
+        <p>We build these the same way, as n8n workflows with an AI step where the judgment sits. And where a mistake would be expensive, the workflow prepares the work and a person approves it, so the hours are saved without handing over the decisions.</p>
+        <p>The AI is only as good as its instructions, so we write those too: the skills and prompts that tell a model exactly what to look for, and what to do when it isn't sure.</p>
+        <p>Much of this work is extracting data from files, and it's ground we know well. An invoice or a scanned form arrives as a PDF and the workflow reads it, so your systems get clean, structured records instead of another attachment waiting in a folder.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="runs-heading">
+    <div class="shell">
+      <h2 id="runs-heading">How it runs</h2>
+      <ol class="steps">
+        <li>
+          <h3>Map the handoff</h3>
+          <p>We sit with whoever does the retyping and walk through one real example from start to finish. You get a short written scope covering what the workflow will do and what it costs.</p>
+        </li>
+        <li>
+          <h3>Build the workflow</h3>
+          <p>We connect the apps and build against real examples from your files, writing the AI instructions for any step that needs judgment. You see it run on your actual data before it goes live.</p>
+        </li>
+        <li>
+          <h3>Run it supervised</h3>
+          <p>For the first stretch the workflow runs while the manual process continues, and every run is checked against what a person would have done. It takes over once the two stop disagreeing.</p>
+        </li>
+        <li>
+          <h3>Hand it over</h3>
+          <p>The workflow stays on your server with documentation, and we stay available for changes. Most are small jobs, same as the systems we build.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="n8n-heading">
+    <div class="shell split">
+      <div>
+        <h2 id="n8n-heading">Built on n8n, running on your server</h2>
+        <p class="measure">We build these workflows on n8n, an automation tool with connectors for hundreds of business apps and for the major AI models. It runs on a server you control, next to your data, under your own logins.</p>
+        <p class="measure">That detail matters more than it sounds. The big automation platforms charge by the task, so the bill climbs exactly when the automation starts pulling its weight. Your n8n workflows cost the same at ten runs a day as at ten thousand, and they're yours like everything else we build.</p>
+        <p class="measure">And when something breaks, you hear about it. Every run is logged, from what came in to what each step did with it. A failed run raises an alert rather than failing silently, and it can be replayed once the cause is fixed.</p>
+      </div>
+      <div class="logo-aside">
+        <img src="n8n-logo.png" alt="n8n logo" width="229" height="62" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="shell">
+      <h2 id="faq-heading">Questions we hear most</h2>
+      <div class="faq">
+        <details>
+          <summary>Will we know if a workflow stops working?</summary>
+          <div class="faq-body"><p>Yes, because every run is logged and a failed run raises an alert, to us and to anyone on your side you name. Once the cause is fixed, the failed runs are replayed, so nothing that happened during the outage is lost.</p></div>
+        </details>
+        <details>
+          <summary>What if the AI gets something wrong?</summary>
+          <div class="faq-body"><p>Where a mistake would be cheap, we let the workflow run and spot-check the logs. Where it would be expensive, the workflow prepares the work and a person approves it before anything is sent or saved. Every AI step records what it read and what it decided, so a wrong answer can be traced and the instructions tightened.</p></div>
+        </details>
+        <details>
+          <summary>Which apps can you connect?</summary>
+          <div class="faq-body"><p>n8n ships with connectors for hundreds of business tools, and anything with an API can be wired in directly. The scope we write before building lists every connection, so there are no surprises about what talks to what.</p></div>
+        </details>
+        <details>
+          <summary>Where does our data go?</summary>
+          <div class="faq-body"><p>Through your own server. n8n runs on infrastructure you control, so your documents and records are not routed through a third-party automation platform. Where an AI step calls a model, we set it up to match your privacy requirements and tell you exactly what leaves the building.</p></div>
+        </details>
+        <details>
+          <summary>Who maintains the workflows?</summary>
+          <div class="faq-body"><p>We do, for as long as you want us to. They're also documented and visible on the n8n canvas, so your own team or another developer can read and change them. You're never locked to us.</p></div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="band-dark cta-band" aria-labelledby="cta-heading">
+    <svg class="band-art" viewBox="22.5 11.5 52 75" aria-hidden="true" focusable="false">
+      <path d="M29 52 L29 45" fill="none" stroke="#1F4066" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="29" cy="30" r="4.5" fill="#1F4066"/>
+      <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#1E4433" stroke-width="9" stroke-linecap="round"/>
+      <path d="M46 29 L57 18 L68 29" fill="none" stroke="#1E4433" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="shell">
+      <h2 id="cta-heading">Tell us where the retyping happens.</h2>
+      <p>A free consultation is enough to list the handoffs worth automating and what each one takes. Some handoffs should stay human, and when that's the answer we'll say so.</p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="contact.html">Book a free consultation</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="shell">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html" aria-label="Offramp Software, home"><img class="brand-logo" src="logo-dark.svg" alt="" width="52" height="75"><span class="brand-text"><span class="brand-name">Offramp</span><span class="brand-sub">Custom Software</span></span></a>
+        <p>Custom software you own, built around how your business runs.</p>
+      </div>
+      <nav aria-label="Footer">
+        <h2 class="footer-heading">Site</h2>
+        <ul class="footer-links">
+          <li><a href="crm-migration.html">Leave your CRM</a></li>
+          <li><a href="new-projects.html">New projects</a></li>
+          <li><a href="automation.html">AI &amp; automation</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h2 class="footer-heading">Contact</h2>
+        <ul class="footer-links">
+          <li>[Email placeholder]</li>
+          <li>[Phone placeholder]</li>
+          <li><a href="contact.html">Book a free consultation</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <p>© 2026 Offramp Software.</p>
+      <p>Salesforce is a registered trademark of Salesforce, Inc. Zoho is a trademark of Zoho Corporation. n8n is a trademark of n8n GmbH. Offramp Software is an independent company, not affiliated with or endorsed by any of them.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="site.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Will we know if a workflow stops working?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, because every run is logged and a failed run raises an alert, to us and to anyone on your side you name. Once the cause is fixed, the failed runs are replayed, so nothing that happened during the outage is lost."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if the AI gets something wrong?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Where a mistake would be cheap, we let the workflow run and spot-check the logs. Where it would be expensive, the workflow prepares the work and a person approves it before anything is sent or saved. Every AI step records what it read and what it decided, so a wrong answer can be traced and the instructions tightened."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which apps can you connect?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "n8n ships with connectors for hundreds of business tools, and anything with an API can be wired in directly. The scope we write before building lists every connection, so there are no surprises about what talks to what."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where does our data go?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Through your own server. n8n runs on infrastructure you control, so your documents and records are not routed through a third-party automation platform. Where an AI step calls a model, we set it up to match your privacy requirements and tell you exactly what leaves the building."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Who maintains the workflows?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We do, for as long as you want us to. They're also documented and visible on the n8n canvas, so your own team or another developer can read and change them. You're never locked to us."
+      }
+    }
+  ]
+}
+</script>
+
+</body>
+</html>

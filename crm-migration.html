@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Migrate off Salesforce: a planned, low-drama exit | Offramp Software</title>
-<meta name="description" content="A Salesforce alternative you own outright. Offramp Software builds your replacement system alongside your current Salesforce org, migrates and reconciles your data, and cuts over only when your team is ready.">
+<title>Leave your CRM: a planned, low-drama exit | Offramp Software</title>
+<meta name="description" content="A CRM replacement you own outright. Offramp Software builds your new system alongside Salesforce, Zoho, or whatever you run today, migrates and reconciles your data, and cuts over only when your team is ready.">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Offramp Software">
-<meta property="og:title" content="Migrate off Salesforce: a planned, low-drama exit">
-<meta property="og:description" content="Your replacement system is built alongside your current org, your data is migrated and reconciled in rehearsals, and cutover happens on a date you choose.">
-<meta property="og:url" content="https://YOUR-DOMAIN/salesforce-migration.html">
+<meta property="og:title" content="Leave your CRM: a planned, low-drama exit">
+<meta property="og:description" content="Your replacement system is built alongside your current CRM, your data is migrated and reconciled in rehearsals, and cutover happens on a date you choose.">
+<meta property="og:url" content="https://YOUR-DOMAIN/crm-migration.html">
 <meta property="og:image" content="https://YOUR-DOMAIN/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -17,7 +17,7 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800&family=Overpass+Mono:wght@600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Barlow+Semi+Condensed:wght@600;700&family=Overpass:wght@800&family=Overpass+Mono:wght@600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,21 +25,14 @@
 
 <header class="site-header">
   <div class="shell header-row">
-    <a class="brand" href="index.html" aria-label="Offramp Software, home">
-      <svg class="logo-mark" viewBox="22.5 11.5 52 75" width="26" height="38" aria-hidden="true" focusable="false">
-        <path d="M29 52 L29 45" fill="none" stroke="#A3B8AF" stroke-width="9" stroke-linecap="round"/>
-        <circle cx="29" cy="30" r="4.5" fill="#A3B8AF"/>
-        <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#0B5F47" stroke-width="9" stroke-linecap="round"/>
-        <path d="M46 29 L57 18 L68 29" fill="none" stroke="#0B5F47" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-      <span class="brand-text"><span class="brand-name">Offramp</span><span class="brand-sub">Custom Software</span></span>
-    </a>
+    <a class="brand" href="index.html" aria-label="Offramp Software, home"><img class="brand-logo" src="logo-light.svg" alt="" width="52" height="75"><span class="brand-text"><span class="brand-name">Offramp</span><span class="brand-sub">Custom Software</span></span></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
       <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
     </button>
     <nav class="site-nav" id="site-nav" aria-label="Main">
-      <a href="salesforce-migration.html" aria-current="page">Leave Salesforce</a>
+      <a href="crm-migration.html" aria-current="page">Leave your CRM</a>
       <a href="new-projects.html">New projects</a>
+      <a href="automation.html">AI &amp; automation</a>
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
     </nav>
@@ -51,8 +44,8 @@
 
   <section class="page-intro">
     <div class="shell">
-      <h1>A planned, low-drama exit from Salesforce</h1>
-      <p class="lede">Two worries stall every Salesforce exit: that the team will lose a week of work, and that records will go missing in the move. Our process was built around both. Your team keeps working in Salesforce until the new system is proven, and nothing cuts over until the data checks out against the source.</p>
+      <h1>A planned, low-drama exit from your CRM</h1>
+      <p class="lede">Two worries stall every CRM exit: that the team will lose a week of work, and that records will go missing in the move. Our process was built around both. Your team keeps working in your current CRM until the new system is proven, and nothing cuts over until the data checks out against the source.</p>
     </div>
   </section>
 
@@ -67,7 +60,7 @@
             <path d="M27 25 L34 32 L27 39"/>
           </svg>
           <h3>No big-bang switch</h3>
-          <p>Your new system is built while Salesforce keeps running. Nothing changes for your team until the replacement has been tested against real work, side by side.</p>
+          <p>Your new system is built while your current CRM keeps running. Nothing changes for your team until the replacement has been tested against real work, side by side.</p>
         </article>
         <article class="card">
           <svg class="card-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
@@ -88,16 +81,16 @@
       </div>
 
       <figure class="diagram">
-        <svg viewBox="0 0 760 200" role="img" aria-label="Timeline diagram: the Salesforce system stays live while the new system is built and tested alongside it; at a planned cutover date, work moves to the new system and Salesforce winds down.">
-          <text x="40" y="46" font-family="Overpass, sans-serif" font-size="15" font-weight="700" fill="#10231D">Salesforce stays live</text>
-          <path d="M40 70 H 540" fill="none" stroke="#CFDAD3" stroke-width="10" stroke-linecap="round"/>
-          <path d="M556 70 H 700" fill="none" stroke="#CFDAD3" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 18" opacity="0.8"/>
-          <text x="40" y="186" font-family="Overpass, sans-serif" font-size="15" font-weight="700" fill="#0B5F47">New system built and tested alongside</text>
-          <path class="t-green" style="--len:636" d="M40 150 H 676" fill="none" stroke="#0B5F47" stroke-width="10" stroke-linecap="round"/>
-          <path class="t-arrow" d="M664 134 L 692 150 L 664 166" fill="none" stroke="#0B5F47" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg viewBox="0 0 760 200" role="img" aria-label="Timeline diagram: the current CRM stays live while the new system is built and tested alongside it; at a planned cutover date, work moves to the new system and the old CRM winds down.">
+          <text x="40" y="46" font-family="Barlow, sans-serif" font-size="15" font-weight="700" fill="#1C2A22">Your CRM stays live</text>
+          <path d="M40 70 H 540" fill="none" stroke="#7FB5FF" stroke-width="10" stroke-linecap="round"/>
+          <path d="M556 70 H 700" fill="none" stroke="#7FB5FF" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 18" opacity="0.8"/>
+          <text x="40" y="186" font-family="Barlow, sans-serif" font-size="15" font-weight="700" fill="#14573E">New system built and tested alongside</text>
+          <path class="t-green" style="--len:636" d="M40 150 H 676" fill="none" stroke="#14573E" stroke-width="10" stroke-linecap="round"/>
+          <path class="t-arrow" d="M664 134 L 692 150 L 664 166" fill="none" stroke="#14573E" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
           <g class="t-cut">
-            <path d="M548 34 V 170" fill="none" stroke="#4A5F57" stroke-width="2" stroke-dasharray="5 7"/>
-            <text x="548" y="22" text-anchor="middle" font-family="Overpass, sans-serif" font-size="14" font-weight="700" fill="#4A5F57">Cutover, on your date</text>
+            <path d="M548 34 V 170" fill="none" stroke="#C99A2E" stroke-width="2.5" stroke-dasharray="5 7"/>
+            <text x="548" y="22" text-anchor="middle" font-family="Barlow, sans-serif" font-size="14" font-weight="700" fill="#8F6A1C">Cutover, on your date</text>
           </g>
         </svg>
         <figcaption class="diagram-caption">Both systems run in parallel while the replacement is built, tested, and loaded with your data. Cutover happens on a scheduled day, with a trained team and a rollback plan already agreed.</figcaption>
@@ -105,12 +98,22 @@
     </div>
   </section>
 
+  <section class="section" aria-labelledby="fit-heading">
+    <div class="shell">
+      <h2 id="fit-heading">The system fits your process</h2>
+      <div class="measure">
+        <p>A packaged CRM arrives with opinions about how a sale should run, and your team bends to meet them. The workarounds pile up in spreadsheets and in people's heads, and new hires learn the software's quirks before they learn your business.</p>
+        <p>Custom software starts from your process. We build the system around how your business already sells and serves its customers, so the screens match the job and nobody reshapes their workday to satisfy the tool. When the process changes, the software follows, because you own it.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="section" aria-labelledby="experience-heading">
     <div class="shell">
-      <h2 id="experience-heading">Built by people who know Salesforce</h2>
+      <h2 id="experience-heading">Built by people who know Salesforce and Zoho</h2>
       <div class="measure">
-        <p>The engineers who build your replacement know Salesforce from the inside. They've built on its object model and untangled heavily customized orgs, so nothing in your setup needs explaining before work starts.</p>
-        <p>That experience matters most during the migration. Someone who already knows how Salesforce stores your records reads an export correctly the first time and recognizes the quirks before they turn into missing data. The new system ends up shaped around what your org really does, because the people designing it can read the org themselves.</p>
+        <p>The engineers who build your replacement know the systems you're leaving from the inside. They've built on Salesforce's object model and worked deep in Zoho, so nothing in your setup needs explaining before work starts.</p>
+        <p>That experience matters most during the migration. Someone who already knows how your CRM stores its records reads an export correctly the first time and recognizes the quirks before they turn into missing data. The new system ends up shaped around what your setup really does, because the people designing it can read the old system themselves.</p>
       </div>
     </div>
   </section>
@@ -121,10 +124,10 @@
       <ol class="steps">
         <li>
           <h3>Audit</h3>
-          <p>We map what your Salesforce org actually does: the objects, fields, reports, automations, and integrations in real use, and the ones nobody has touched in years. You get a written plan covering what the new system needs, what the migration involves, and how it lines up with your renewal date.</p>
+          <p>We map what your CRM actually does: the records, fields, reports, automations, and integrations in real use, and the ones nobody has touched in years. You get a written plan covering what the new system needs, what the migration involves, and how it lines up with your renewal date.</p>
         </li>
         <li>
-          <h3>Build alongside Salesforce</h3>
+          <h3>Build alongside your CRM</h3>
           <p>We build the replacement while your team keeps working exactly as before. You review working software as it takes shape, so the system fits your process before anyone depends on it.</p>
         </li>
         <li>
@@ -154,7 +157,7 @@
         </div>
         <div class="deliverable">
           <h3>Reconciliation reports</h3>
-          <p>Record counts from every rehearsal, checked against Salesforce until they match.</p>
+          <p>Record counts from every rehearsal, checked against the source system until they match.</p>
         </div>
         <div class="deliverable">
           <h3>A rollback plan</h3>
@@ -162,7 +165,7 @@
         </div>
         <div class="deliverable">
           <h3>Code and data archive</h3>
-          <p>The full codebase with documentation, plus a complete export of your original Salesforce data.</p>
+          <p>The full codebase with documentation, plus a complete export of your original CRM data.</p>
         </div>
       </div>
     </div>
@@ -173,12 +176,12 @@
       <h2 id="faq-heading">Questions we hear most</h2>
       <div class="faq">
         <details>
-          <summary>What happens to our Salesforce data?</summary>
+          <summary>What happens to our CRM data?</summary>
           <div class="faq-body"><p>All of it is exported before anything else happens, and you keep a complete archive regardless of what moves into the new system. The working data is mapped and migrated in rehearsals, and each rehearsal is reconciled against the source until the numbers match.</p></div>
         </details>
         <details>
           <summary>How long does a migration take?</summary>
-          <div class="faq-body"><p>It depends on how much your org actually does: a lean sales pipeline is a different project from a decade of customization and integrations. That's what the audit is for. It ends with a written plan with dates, so the honest answer arrives early and in writing rather than as a surprise later.</p></div>
+          <div class="faq-body"><p>It depends on how much your current system actually does: a lean sales pipeline is a different project from a decade of customization and integrations. That's what the audit is for. It ends with a written plan with dates, so the honest answer arrives early and in writing rather than as a surprise later.</p></div>
         </details>
         <details>
           <summary>Our renewal date is coming up. When should we start?</summary>
@@ -190,7 +193,7 @@
         </details>
         <details>
           <summary>What if something is wrong after cutover?</summary>
-          <div class="faq-body"><p>There's a rollback plan agreed before the switch, your Salesforce org remains available for as long as your contract runs, and we stay on through a support period to fix whatever the first weeks of real use turn up.</p></div>
+          <div class="faq-body"><p>There's a rollback plan agreed before the switch, your old CRM remains available for as long as your contract runs, and we stay on through a support period to fix whatever the first weeks of real use turn up.</p></div>
         </details>
       </div>
     </div>
@@ -200,8 +203,8 @@
     <div class="shell">
       <h2 id="economics-heading">The price of leaving just dropped</h2>
       <div class="measure">
-        <p>For years the strongest case for staying was the cost of the replacement. A custom build meant a team of engineers working for months, and the quote could rival several years of Salesforce seats. For plenty of companies the honest advice was to sit tight.</p>
-        <p>AI-assisted development changed that advice. Our engineers now build with AI handling most of the routine code, and recent projects have come in as low as a tenth of what the same system would have cost a few years ago. Salesforce's pricing has not moved in that direction. With the upfront investment that small, the switch becomes a short payback calculation, and every renewal you skip after it is money that stays with you.</p>
+        <p>For years the strongest case for staying was the cost of the replacement. A custom build meant a team of engineers working for months, and the quote could rival several years of CRM seats. For plenty of companies the honest advice was to sit tight.</p>
+        <p>AI-assisted development changed that advice. Our engineers now build with AI handling most of the routine code, and recent projects have come in as low as a tenth of what the same system would have cost a few years ago. Per-seat pricing has not moved in that direction. With the upfront investment that small, the switch becomes a short payback calculation, and every renewal you skip after it is money that stays with you.</p>
       </div>
     </div>
   </section>
@@ -209,7 +212,7 @@
   <section class="section" aria-labelledby="calc-heading">
     <div class="shell">
       <h2 id="calc-heading">Run your own numbers</h2>
-      <p class="measure" style="color: var(--muted);">We won't quote Salesforce's pricing for you. Enter what you actually pay and see what staying adds up to.</p>
+      <p class="measure" style="color: var(--muted);">We won't quote your vendor's pricing for you. Enter what you actually pay and see what staying adds up to.</p>
       <div class="card calc">
         <div class="calc-grid">
           <div class="field">
@@ -233,14 +236,14 @@
 
   <section class="band-dark cta-band" aria-labelledby="cta-heading">
     <svg class="band-art" viewBox="22.5 11.5 52 75" aria-hidden="true" focusable="false">
-      <path d="M29 52 L29 45" fill="none" stroke="#17332B" stroke-width="9" stroke-linecap="round"/>
-      <circle cx="29" cy="30" r="4.5" fill="#17332B"/>
-      <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#17332B" stroke-width="9" stroke-linecap="round"/>
-      <path d="M46 29 L57 18 L68 29" fill="none" stroke="#17332B" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M29 52 L29 45" fill="none" stroke="#1F4066" stroke-width="9" stroke-linecap="round"/>
+      <circle cx="29" cy="30" r="4.5" fill="#1F4066"/>
+      <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#1E4433" stroke-width="9" stroke-linecap="round"/>
+      <path d="M46 29 L57 18 L68 29" fill="none" stroke="#1E4433" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
     <div class="shell">
       <h2 id="cta-heading">Find out what your exit would involve.</h2>
-      <p>Bring your org as it is, seat count and renewal date included. A free consultation gets you a straight answer about scope and sequencing, and about whether the move makes sense for you at all.</p>
+      <p>Bring your setup as it is, seat count and renewal date included. A free consultation gets you a straight answer about scope and sequencing, and about whether the move makes sense for you at all.</p>
       <div class="hero-actions">
         <a class="btn btn-light" href="contact.html">Book a free consultation</a>
       </div>
@@ -253,22 +256,15 @@
   <div class="shell">
     <div class="footer-grid">
       <div>
-        <a class="brand" href="index.html" aria-label="Offramp Software, home">
-          <svg class="logo-mark" viewBox="22.5 11.5 52 75" width="26" height="38" aria-hidden="true" focusable="false">
-            <path d="M29 52 L29 45" fill="none" stroke="#A3B8AF" stroke-width="9" stroke-linecap="round"/>
-            <circle cx="29" cy="30" r="4.5" fill="#A3B8AF"/>
-            <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
-            <path d="M46 29 L57 18 L68 29" fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-          <span class="brand-text"><span class="brand-name">Offramp</span><span class="brand-sub">Custom Software</span></span>
-        </a>
+        <a class="brand" href="index.html" aria-label="Offramp Software, home"><img class="brand-logo" src="logo-dark.svg" alt="" width="52" height="75"><span class="brand-text"><span class="brand-name">Offramp</span><span class="brand-sub">Custom Software</span></span></a>
         <p>Custom software you own, built around how your business runs.</p>
       </div>
       <nav aria-label="Footer">
         <h2 class="footer-heading">Site</h2>
         <ul class="footer-links">
-          <li><a href="salesforce-migration.html">Leave Salesforce</a></li>
+          <li><a href="crm-migration.html">Leave your CRM</a></li>
           <li><a href="new-projects.html">New projects</a></li>
+          <li><a href="automation.html">AI &amp; automation</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -284,24 +280,13 @@
     </div>
     <div class="footer-legal">
       <p>© 2026 Offramp Software.</p>
-      <p>Salesforce is a registered trademark of Salesforce, Inc. Offramp Software is an independent company, not affiliated with or endorsed by Salesforce, Inc.</p>
+      <p>Salesforce is a registered trademark of Salesforce, Inc. Zoho is a trademark of Zoho Corporation. Offramp Software is an independent company, not affiliated with or endorsed by either.</p>
     </div>
   </div>
 </footer>
 
 <script>
 (function () {
-  var fig = document.querySelector('.diagram');
-  if (fig && 'IntersectionObserver' in window &&
-      !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    fig.classList.add('will-animate');
-    new IntersectionObserver(function (entries, obs) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { fig.classList.add('in-view'); obs.disconnect(); }
-      });
-    }, { threshold: 0.4 }).observe(fig);
-  }
-
   var seats = document.getElementById('calc-seats');
   var rate = document.getElementById('calc-rate');
   var years = document.getElementById('calc-years');
@@ -344,18 +329,6 @@
   update();
 })();
 
-(function () {
-  var steps = document.querySelectorAll('.steps li');
-  if (!steps.length || !('IntersectionObserver' in window) ||
-      window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  document.documentElement.classList.add('js-steps');
-  var obs = new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (e.isIntersecting) { e.target.classList.add('on'); obs.unobserve(e.target); }
-    });
-  }, { threshold: 0.35 });
-  steps.forEach(function (li) { obs.observe(li); });
-})();
 </script>
 <script src="site.js" defer></script>
 <script type="application/ld+json">
@@ -365,7 +338,7 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "What happens to our Salesforce data?",
+      "name": "What happens to our CRM data?",
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "All of it is exported before anything else happens, and you keep a complete archive regardless of what moves into the new system. The working data is mapped and migrated in rehearsals, and each rehearsal is reconciled against the source until the numbers match."
@@ -376,7 +349,7 @@
       "name": "How long does a migration take?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "It depends on how much your org actually does: a lean sales pipeline is a different project from a decade of customization and integrations. That's what the audit is for. It ends with a written plan with dates, so the honest answer arrives early and in writing rather than as a surprise later."
+        "text": "It depends on how much your current system actually does: a lean sales pipeline is a different project from a decade of customization and integrations. That's what the audit is for. It ends with a written plan with dates, so the honest answer arrives early and in writing rather than as a surprise later."
       }
     },
     {
@@ -400,7 +373,7 @@
       "name": "What if something is wrong after cutover?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "There's a rollback plan agreed before the switch, your Salesforce org remains available for as long as your contract runs, and we stay on through a support period to fix whatever the first weeks of real use turn up."
+        "text": "There's a rollback plan agreed before the switch, your old CRM remains available for as long as your contract runs, and we stay on through a support period to fix whatever the first weeks of real use turn up."
       }
     }
   ]
