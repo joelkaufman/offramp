@@ -5,8 +5,8 @@
   <g transform="translate(795 75) scale(6) translate(-22.5 -11.5)">
     <path d="M29 52 L29 45" fill="none" stroke="#1F4066" stroke-width="9" stroke-linecap="round"/>
     <circle cx="29" cy="30" r="4.5" fill="#1F4066"/>
-    <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#1E4433" stroke-width="9" stroke-linecap="round"/>
-    <path d="M46 29 L57 18 L68 29" fill="none" stroke="#1E4433" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#00C267" stroke-width="9" stroke-linecap="round"/>
+    <path d="M46 29 L57 18 L68 29" fill="none" stroke="#00C267" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <!-- Logo mark, dark colorway -->
   <g transform="translate(96 90) scale(1.5) translate(-22.5 -11.5)">

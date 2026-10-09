@@ -2,6 +2,6 @@
   <title>Offramp Software</title>
   <path d="M29 52 L29 45" fill="none" stroke="#2463CC" stroke-width="9" stroke-linecap="round"/>
   <circle cx="29" cy="30" r="4.5" fill="#2463CC"/>
-  <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#0B5F47" stroke-width="9" stroke-linecap="round"/>
-  <path d="M46 29 L57 18 L68 29" fill="none" stroke="#0B5F47" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M29 80 L29 72 C29 58 57 60 57 44 L57 18" fill="none" stroke="#00C267" stroke-width="9" stroke-linecap="round"/>
+  <path d="M46 29 L57 18 L68 29" fill="none" stroke="#00C267" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

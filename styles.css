@@ -4,9 +4,9 @@
    with one amber road-marking accent used sparingly. */
 
 :root {
-  --pine: #14573E;
-  --pine-deep: #0D4530;
-  --pine-tint: rgba(20, 87, 62, 0.07);
+  --pine: #00C267;
+  --pine-deep: #00C267;
+  --pine-tint: rgba(0, 194, 103, 0.07);
   --ink: #1C2A22;
   --paper: #FFFFFF;
   --surface: #F4F7F3;
@@ -140,7 +140,7 @@ summary:focus-visible {
   font-size: 1.55rem;
   font-weight: 800;
   letter-spacing: -0.02em;
-  color: #0B5F47; /* same green as the logo route */
+  color: #00C267; /* same green as the logo route */
 }
 .brand-sub {
   /* tracked out so the tagline runs the same width as the name above it */
@@ -194,7 +194,7 @@ summary:focus-visible {
 }
 .btn-primary:hover {
   background: var(--pine-deep);
-  box-shadow: 0 6px 18px rgba(13, 69, 48, 0.25);
+  box-shadow: 0 6px 18px rgba(0, 194, 103, 0.25);
 }
 .btn-secondary {
   background: rgba(36, 99, 204, 0.06);
