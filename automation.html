@@ -55,7 +55,7 @@
       <p class="measure" style="color: var(--muted);">Every automation has the same shape. Something happens in one app, and a workflow carries the news to every system that needs it. Here, a sales enquiry, handled from the moment it arrives.</p>
 
       <figure class="diagram">
-        <svg viewBox="0 0 760 310" role="img" aria-label="Diagram of the workflow on the n8n canvas: a trigger node for the arriving enquiry connects to an AI node that reads and qualifies it, which branches to three action nodes: create the lead, draft the reply, and notify sales.">
+        <svg class="diagram-landscape" viewBox="0 0 760 310" role="img" aria-label="Diagram of the workflow on the n8n canvas: a trigger node for the arriving enquiry connects to an AI node that reads and qualifies it, which branches to three action nodes: create the lead, draft the reply, and notify sales.">
           <defs>
             <pattern id="n8n-grid" width="20" height="20" patternUnits="userSpaceOnUse">
               <circle cx="1.5" cy="1.5" r="1.5" fill="#DCE4D8" opacity="0.7"/>
@@ -98,6 +98,52 @@
           <path d="M584 231 C 578.5 231 576 235 576 240 V246 L573 250 H595 L592 246 V240 C 592 235 589.5 231 584 231 Z" fill="none" stroke="#00C267" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M581 254 C 581 256 582.5 257.5 584 257.5 C 585.5 257.5 587 256 587 254" fill="none" stroke="#00C267" stroke-width="2.5" stroke-linecap="round"/>
           <text x="584" y="295" text-anchor="middle" font-family="'Instrument Sans', sans-serif" font-size="13" font-weight="600" fill="#566759">Notify sales</text>
+        </svg>
+        <!-- The same canvas turned portrait for phones: trigger and AI run down
+             the spine, the three actions fan out along the bottom. -->
+        <svg class="diagram-portrait" viewBox="0 0 320 410" role="img" aria-label="Diagram of the workflow on the n8n canvas: a trigger node for the arriving enquiry connects to an AI node that reads and qualifies it, which branches to three action nodes: create the lead, draft the reply, and notify sales.">
+          <defs>
+            <pattern id="n8n-grid-m" width="20" height="20" patternUnits="userSpaceOnUse">
+              <circle cx="1.5" cy="1.5" r="1.5" fill="#DCE4D8" opacity="0.7"/>
+            </pattern>
+          </defs>
+          <rect x="0" y="0" width="320" height="410" fill="url(#n8n-grid-m)"/>
+          <!-- rails -->
+          <path class="rail" d="M160 80 V154" fill="none" stroke="#D4DFD2" stroke-width="3" stroke-linecap="round"/>
+          <path class="rail" d="M160 210 C 160 265, 55 255, 55 310" fill="none" stroke="#D4DFD2" stroke-width="3" stroke-linecap="round"/>
+          <path class="rail" d="M160 210 V310" fill="none" stroke="#D4DFD2" stroke-width="3" stroke-linecap="round"/>
+          <path class="rail" d="M160 210 C 160 265, 265 255, 265 310" fill="none" stroke="#D4DFD2" stroke-width="3" stroke-linecap="round"/>
+          <!-- flowing data -->
+          <path class="flow" d="M160 80 V154" fill="none" stroke="#00C267" stroke-width="3" stroke-linecap="round"/>
+          <path class="flow" style="--d:-0.3s" d="M160 210 C 160 265, 55 255, 55 310" fill="none" stroke="#00C267" stroke-width="3" stroke-linecap="round"/>
+          <path class="flow" style="--d:-0.55s" d="M160 210 V310" fill="none" stroke="#00C267" stroke-width="3" stroke-linecap="round"/>
+          <path class="flow" style="--d:-0.8s" d="M160 210 C 160 265, 265 255, 265 310" fill="none" stroke="#00C267" stroke-width="3" stroke-linecap="round"/>
+          <!-- trigger node -->
+          <rect x="132" y="24" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <rect x="146" y="40" width="28" height="22" rx="3" fill="none" stroke="#00C267" stroke-width="2.5"/>
+          <path d="M146 43 L160 53 L174 43" fill="none" stroke="#00C267" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="160" cy="80" r="3.5" fill="#00C267"/>
+          <text x="202" y="57" text-anchor="start" font-family="'Instrument Sans', sans-serif" font-size="14" font-weight="600" fill="#566759">Enquiry arrives</text>
+          <!-- AI node -->
+          <rect x="132" y="154" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <path d="M160 168 L163.5 178.5 L174 182 L163.5 185.5 L160 196 L156.5 185.5 L146 182 L156.5 178.5 Z" fill="#2463CC"/>
+          <circle cx="160" cy="210" r="3.5" fill="#00C267"/>
+          <text x="202" y="187" text-anchor="start" font-family="'Instrument Sans', sans-serif" font-size="14" font-weight="600" fill="#566759">AI qualifies</text>
+          <!-- action node: create lead -->
+          <rect x="27" y="310" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <circle cx="52" cy="331" r="6" fill="none" stroke="#00C267" stroke-width="2.5"/>
+          <path d="M42 353 C 42 344, 62 344, 62 353" fill="none" stroke="#00C267" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M68 327 V339 M62 333 H74" stroke="#00C267" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="55" y="388" text-anchor="middle" font-family="'Instrument Sans', sans-serif" font-size="14" font-weight="600" fill="#566759">Create lead</text>
+          <!-- action node: draft reply -->
+          <rect x="132" y="310" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <path d="M146 346 L174 328 L166 350 L159 344 Z" fill="none" stroke="#00C267" stroke-width="2.5" stroke-linejoin="round"/>
+          <text x="160" y="388" text-anchor="middle" font-family="'Instrument Sans', sans-serif" font-size="14" font-weight="600" fill="#566759">Draft reply</text>
+          <!-- action node: notify sales -->
+          <rect x="237" y="310" width="56" height="56" rx="14" fill="#FFFFFF" stroke="#DCE4D8" stroke-width="2"/>
+          <path d="M265 324 C 259.5 324 257 328 257 333 V339 L254 343 H276 L273 339 V333 C 273 328 270.5 324 265 324 Z" fill="none" stroke="#00C267" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M262 347 C 262 349 263.5 350.5 265 350.5 C 266.5 350.5 268 349 268 347" fill="none" stroke="#00C267" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="265" y="388" text-anchor="middle" font-family="'Instrument Sans', sans-serif" font-size="14" font-weight="600" fill="#566759">Notify sales</text>
         </svg>
         <figcaption class="diagram-caption">An enquiry lands in the inbox and AI reads it on arrival. By the time a salesperson looks, the lead is in the CRM with a drafted reply waiting for approval. This is the workflow as it looks in n8n, running on your server.</figcaption>
       </figure>

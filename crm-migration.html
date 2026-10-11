@@ -81,17 +81,31 @@
       </div>
 
       <figure class="diagram">
-        <svg viewBox="0 0 760 200" role="img" aria-label="Timeline diagram: the current CRM stays live while the new system is built and tested alongside it; at a planned cutover date, work moves to the new system and the old CRM winds down.">
+        <svg class="diagram-landscape" viewBox="0 0 760 200" role="img" aria-label="Timeline diagram: the current CRM stays live while the new system is built and tested alongside it; at a planned cutover date, work moves to the new system and the old CRM winds down.">
           <text x="40" y="46" font-family="'Instrument Sans', sans-serif" font-size="15" font-weight="700" fill="#1C2A22">Your CRM stays live</text>
           <path d="M40 70 H 540" fill="none" stroke="#7FB5FF" stroke-width="10" stroke-linecap="round"/>
           <path d="M556 70 H 700" fill="none" stroke="#7FB5FF" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 18" opacity="0.8"/>
           <text x="40" y="186" font-family="'Instrument Sans', sans-serif" font-size="15" font-weight="700" fill="#00C267">New system built and tested alongside</text>
-          <path class="t-green" style="--len:636" d="M40 150 H 676" fill="none" stroke="#00C267" stroke-width="10" stroke-linecap="round"/>
+          <path class="t-green" d="M40 150 H 676" fill="none" stroke="#00C267" stroke-width="10" stroke-linecap="round"/>
           <path class="t-arrow" d="M664 134 L 692 150 L 664 166" fill="none" stroke="#00C267" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
           <g class="t-cut">
             <path d="M548 34 V 170" fill="none" stroke="#C99A2E" stroke-width="2.5" stroke-dasharray="5 7"/>
             <text x="548" y="22" text-anchor="middle" font-family="'Instrument Sans', sans-serif" font-size="14" font-weight="700" fill="#8F6A1C">Cutover, on your date</text>
           </g>
+        </svg>
+        <!-- The same timeline compressed for phones: the cutover marker moves
+             to the top so the bar labels keep their room. -->
+        <svg class="diagram-portrait" viewBox="0 0 320 190" role="img" aria-label="Timeline diagram: the current CRM stays live while the new system is built and tested alongside it; at a planned cutover date, work moves to the new system and the old CRM winds down.">
+          <g class="t-cut">
+            <text x="218" y="20" text-anchor="middle" font-family="'Instrument Sans', sans-serif" font-size="14" font-weight="700" fill="#8F6A1C">Cutover, on your date</text>
+            <path d="M218 30 V 158" fill="none" stroke="#C99A2E" stroke-width="2.5" stroke-dasharray="5 7"/>
+          </g>
+          <text x="12" y="60" font-family="'Instrument Sans', sans-serif" font-size="15" font-weight="700" fill="#1C2A22">Your CRM stays live</text>
+          <path d="M12 84 H 206" fill="none" stroke="#7FB5FF" stroke-width="10" stroke-linecap="round"/>
+          <path d="M230 84 H 300" fill="none" stroke="#7FB5FF" stroke-width="10" stroke-linecap="round" stroke-dasharray="2 18" opacity="0.8"/>
+          <path class="t-green" d="M12 132 H 262" fill="none" stroke="#00C267" stroke-width="10" stroke-linecap="round"/>
+          <path class="t-arrow" d="M252 118 L 276 132 L 252 146" fill="none" stroke="#00C267" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="12" y="180" font-family="'Instrument Sans', sans-serif" font-size="15" font-weight="700" fill="#00C267">New system built and tested alongside</text>
         </svg>
         <figcaption class="diagram-caption">Both systems run in parallel while the replacement is built, tested, and loaded with your data. Cutover happens on a scheduled day, with a trained team and a rollback plan already agreed.</figcaption>
       </figure>

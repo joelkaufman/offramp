@@ -421,6 +421,19 @@ summary:focus-visible {
   box-shadow: 0 1px 2px rgba(17, 43, 32, 0.04);
 }
 .diagram svg { display: block; min-width: 620px; width: 100%; height: auto; }
+.diagram .diagram-portrait { display: none; }
+@media (max-width: 640px) {
+  /* A diagram with a portrait variant swaps to it instead of scrolling. */
+  .diagram { padding: 1.3rem 1.2rem; }
+  .diagram .diagram-landscape { display: none; }
+  .diagram .diagram-portrait {
+    display: block;
+    min-width: 0;
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
 .diagram-caption {
   font-size: 0.94rem;
   color: var(--muted);
@@ -731,17 +744,22 @@ fieldset.field legend {
 
 /* ---------- Migration timeline draw-on-scroll ---------- */
 
+/* The landscape and portrait timelines have different bar lengths, so each
+   gets its own draw distance; 40 units stay pre-drawn behind the arrow. */
 .diagram.will-animate .t-green {
-  stroke-dasharray: var(--len);
-  stroke-dashoffset: 596; /* 40 units pre-drawn behind the arrow */
   transition: stroke-dashoffset 1.2s cubic-bezier(0.65, 0, 0.35, 1);
 }
 .diagram.will-animate .t-arrow {
-  transform: translateX(-596px);
   transition: transform 1.2s cubic-bezier(0.65, 0, 0.35, 1);
 }
-.diagram.in-view .t-green { stroke-dashoffset: 0; }
-.diagram.in-view .t-arrow { transform: translateX(0); }
+.diagram.will-animate .diagram-landscape .t-green { stroke-dasharray: 636; stroke-dashoffset: 596; }
+.diagram.will-animate .diagram-portrait .t-green { stroke-dasharray: 250; stroke-dashoffset: 210; }
+.diagram.will-animate .diagram-landscape .t-arrow { transform: translateX(-596px); }
+.diagram.will-animate .diagram-portrait .t-arrow { transform: translateX(-210px); }
+.diagram.in-view .diagram-landscape .t-green,
+.diagram.in-view .diagram-portrait .t-green { stroke-dashoffset: 0; }
+.diagram.in-view .diagram-landscape .t-arrow,
+.diagram.in-view .diagram-portrait .t-arrow { transform: translateX(0); }
 
 /* ---------- Cost calculator ---------- */
 
