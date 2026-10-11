@@ -71,6 +71,29 @@
   });
 })();
 
+/* Diagrams wider than the screen get a swipe hint until the first swipe. */
+(function () {
+  var figs = document.querySelectorAll('.diagram');
+  if (!figs.length) return;
+
+  function update() {
+    figs.forEach(function (fig) {
+      if (fig.dataset.swiped) return;
+      fig.classList.toggle('scrollable', fig.scrollWidth > fig.clientWidth + 1);
+    });
+  }
+
+  figs.forEach(function (fig) {
+    fig.addEventListener('scroll', function () {
+      fig.dataset.swiped = '1';
+      fig.classList.remove('scrollable');
+    }, { once: true, passive: true });
+  });
+
+  update();
+  window.addEventListener('resize', update, { passive: true });
+})();
+
 /* Diagram draw-on-scroll: animate any .diagram figure when it enters view. */
 (function () {
   var figs = document.querySelectorAll('.diagram');
